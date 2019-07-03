@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import PlaceCards from './PlaceCards.js'
+import './style.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    const places = [
+      {
+        neighborhood: 'San Telmo',
+        name: 'Berlina Bunker',
+        details: 'warehouse bar with ping pong, games, food and a skate park',
+      },
+      {
+        neighborhood: "Almagro",
+        name: "Ladran",
+        details: "LGBT live cumbia music bar and restaurant with outside area."
+      },
+      {
+        neighborhood: "Palermo",
+        name: "Input",
+        details: "Best party to go to on a Weds night with drag queens! Line gets long fast so get there no later than 12:15 or you'll wait forever"
+      }
+    ]
+    return(
+      <div className="main">
+        <PlaceCards placesData={places}/>
+      </div>
+      
+    )
+  }
 }
 
 export default App;
