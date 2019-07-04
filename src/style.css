@@ -1,3 +1,7 @@
+body {
+    background:#7452ad;
+}
+
 .main {
     display: flex;
 }
@@ -7,31 +11,56 @@
     flex-flow: row wrap;
 }
 
-.placeCard {
-    width:200px;
-    height:300px;
-    background:#897a8e;
-    color:black;
-    padding:5px;
-    margin:5px;
+h2 {
+    color:white;
+    font-family:"sans-serif";
+}
+
+label {
+    color:grey;
+}
+form {
+    background: #f3eaf5;
+    width: 150px;
+    padding: 5px;
+    margin-right:10px;
+    height: 150px;
+    border-radius: 7px;
     
 }
 
-h4 {
-    font-size:12px;
+.placeCard {
+    width:200px;
+    height:270px;
+    background:white;
+    color:black;
+    padding:5px;
+    margin:5px;
+    border-radius: 7px;
+    
 }
+
+.neighborhood {
+    font-size:12px;
+    margin-left:10px;
+}
+
+
 .placeName {
-    font-size:20px 
+    font-size:20px;
 }
 
 p {
-    background: #cccaca;
+    background: #e9e1ff;
     border-radius: 5px;
     padding:10px;
+    margin: 0 auto;
+    width:160px;
 }
 
 .placeDetails {
     height: 110px;
+    margin-top:10px;
 }
 
 .deleteButton {
