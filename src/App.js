@@ -22,11 +22,21 @@ class App extends Component {
       }
     ]
   }
+  removePlace = index => {
+    const { places } = this.state
+    
+    this.setState({
+      places: places.filter((place, i) => {
+        return i !== index
+      })
+    })
+  }
+
   render() {
     const { places } = this.state
     return(
       <div className="main">
-        <PlaceCards placesData={places}/>
+        <PlaceCards placesData={places} removePlace={this.removePlace} />
       </div>
       
     )

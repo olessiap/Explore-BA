@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 class PlaceCards extends Component {
     render() {
-        const { placesData } = this.props
+        const { placesData, removePlace } = this.props
         return(
-            <PlaceBody placeData={placesData} />
+            <PlaceBody placeData={placesData} removePlace={removePlace}/>
         )
     }
 }
@@ -13,9 +13,12 @@ const PlaceBody = props => {
     const newPlaceCard = props.placeData.map((place, index) => {
         return(
             <div key={index} className="placeCard">
-                <h4>{place.neighborhood}</h4>
+                <button 
+                    className="deleteButton"
+                    onClick={()=> props.removePlace(index)}>X</button>
+                <h4 className="neighborhood">{place.neighborhood}</h4>
                 <p className="placeName">{place.name}</p>
-                <p>{place.details}</p>
+                <p className="placeDetails">{place.details}</p>
             </div>
             )
         })

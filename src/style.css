@@ -19,7 +19,6 @@
 
 h4 {
     font-size:12px;
-    padding:5px
 }
 .placeName {
     font-size:20px 
@@ -29,4 +28,12 @@ p {
     background: #cccaca;
     border-radius: 5px;
     padding:10px;
+}
+
+.placeDetails {
+    height: 110px;
+}
+
+.deleteButton {
+    float:right;
 }
