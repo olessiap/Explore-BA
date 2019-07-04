@@ -3,8 +3,8 @@ import PlaceCards from './PlaceCards.js'
 import './style.css'
 
 class App extends Component {
-  render() {
-    const places = [
+  state = {
+    places: [
       {
         neighborhood: 'San Telmo',
         name: 'Berlina Bunker',
@@ -21,6 +21,9 @@ class App extends Component {
         details: "Best party to go to on a Weds night with drag queens! Line gets long fast so get there no later than 12:15 or you'll wait forever"
       }
     ]
+  }
+  render() {
+    const { places } = this.state
     return(
       <div className="main">
         <PlaceCards placesData={places}/>

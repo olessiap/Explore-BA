@@ -20,7 +20,7 @@ const PlaceBody = props => {
             )
         })
     
-    return <div className="main2">{newPlaceCard}</div>
+    return <div className="main2">{newPlaceCard}</div> 
 }
 
 export default PlaceCards
