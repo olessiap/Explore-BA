@@ -2,6 +2,8 @@ body {
     font-family: 'Dosis', sans-serif;
     color: #666;
     background: #F6F6F6;
+    width:60%;
+    margin: 0 auto;
 }
 
 /* .main {
@@ -14,7 +16,7 @@ body {
 }
 
 h2 {
-    color:white;
+    color:#fbc2eb;
     font-family:"sans-serif";
 }
 
@@ -23,7 +25,7 @@ label {
 }
 
 form {
-    background: #f3eaf5;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     width: 150px;
     padding: 5px;
     margin-right:10px;

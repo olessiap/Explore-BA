@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Form from './Form.js'
+import Toggle from './Toggle.js'
 import PlaceCards from './PlaceCards.js'
 import './style.css'
 
@@ -20,6 +21,11 @@ class App extends Component {
             neighborhood: "Palermo",
             name: "Input",
             details: "Best party to go to on a Weds night with drag queens! Line gets long fast so get there no later than 12:15 or you'll wait forever"
+          },
+          {
+            neighborhood: "Villa Crespo",
+            name:"El Club de Milanesas",
+            details:"a chain restaurant that serves tasty milanesas"
           }
     ]
   }
@@ -60,6 +66,7 @@ class App extends Component {
     return(
       <div className="main">
         <Form handleSubmit={this.handleSubmit} />
+        <Toggle handleClick={this.handleClick} />
         <PlaceCards placesData={places} removePlace={this.removePlace} />
       </div>
       
