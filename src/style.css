@@ -39,6 +39,7 @@ form {
     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
     margin:5px;
     border-radius: 12px;
+    display:table;
     
 }
 
@@ -67,15 +68,17 @@ form {
     margin:0 auto;
     font-size:15px;
     word-wrap: break-word;
+    max-height:120px;
 }
+
 
 .delete-div {
+    display: table-cell; 
     text-align:center;
-}
-
-.deleteButton {
-    display:table-cell;
-    bottom:0px;
+    vertical-align: bottom;
+    width: 100px;
+    height:100px;
+    background:yellow;
 }
 
 .placeCard:hover {

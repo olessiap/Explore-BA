@@ -15,12 +15,13 @@ const PlaceBody = props => {
             <div key={index} className="placeCard">
                 <h1 className="placeName">{place.name}</h1>
                 <h4 className="neighborhood">{place.neighborhood}</h4>
-                <p className="placeDetails">{place.details}</p>
-                <div className="delete-div">
+                <div className="placeDetails">{place.details}</div>
+                {/* <div className="delete-div">
                     <button 
                         className="deleteButton"
                         onClick={()=> props.removePlace(index)}>X</button>
-                </div>
+                </div> */}
+                
                 
             </div>
             )
