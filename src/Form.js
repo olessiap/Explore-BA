@@ -7,7 +7,8 @@ class Form extends Component {
         this.initialState = {
             neighborhood: '',
             name: '',
-            details: ''
+            details: '',
+            option: 'bar'
         }
 
         this.state = this.initialState
@@ -27,7 +28,7 @@ class Form extends Component {
     }
 
     render() {
-        const { neighborhood, name, details } = this.state
+        const { neighborhood, name, details, option } = this.state
         return(
             <div>
                 <h2>Add New Place</h2>
@@ -50,6 +51,12 @@ class Form extends Component {
                         name="details"
                         value={details}
                         onChange={this.handleChange}/>
+                    <label>Type of Place</label>
+                    <select option={this.state.value} onChange={this.handleChange}>
+                        <option value="bar">Bar</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="activity">Activity</option>
+                    </select>
                     <input 
                         type="button"
                         value="Submit"

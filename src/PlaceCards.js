@@ -13,16 +13,17 @@ const PlaceBody = props => {
     const newPlaceCard = props.placeData.map((place, index) => {
         return(
             <div key={index} className="placeCard">
-                <h1 className="placeName">{place.name}</h1>
+                <div className="placeHeader">
+                    <h1 className="placeName">{place.name}</h1>
+                    <h4 className="option">{place.option}</h4>
+                </div>
                 <h4 className="neighborhood">{place.neighborhood}</h4>
                 <div className="placeDetails">{place.details}</div>
                 {/* <div className="delete-div">
                     <button 
                         className="deleteButton"
                         onClick={()=> props.removePlace(index)}>X</button>
-                </div> */}
-                
-                
+                </div> */} 
             </div>
             )
         })
