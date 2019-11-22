@@ -64,7 +64,7 @@ class App extends Component {
     return(
       <div className="main">
         <Form handleSubmit={this.handleSubmit} />
-        <Toggle handleClick={this.handleClick} />
+        {/* <Toggle handleClick={this.handleClick} /> */}
         <PlaceCards placesData={places} removePlace={this.removePlace} />
       </div>
       
